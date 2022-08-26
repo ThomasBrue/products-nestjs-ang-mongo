@@ -1,0 +1,33 @@
+
+### Create new product
+
+POST http://localhost:3000/products HTTP/1.1
+content-type: application/json
+
+{
+    "title": "Some Title 111",
+    "description": "This is a first Product",
+    "price": 29.99
+}
+
+### Get all products
+
+GET http://localhost:3000/products HTTP/1.1
+
+### Get single product
+
+GET http://localhost:3000/products/62f3baff67f06ba49ecb18d5 HTTP/1.1
+
+### Update single product
+
+PATCH http://localhost:3000/products/62f3baff67f06ba49ecb18d5 HTTP/1.1
+content-type: application/json
+
+{
+    "title": "Realy nice patch operation title",
+    "price": 91919191
+}
+
+### Delete single product
+
+DELETE http://localhost:3000/products/62f3baff67f06ba49ecb18d5 HTTP/1.1
