@@ -1,0 +1,27 @@
+<div style="border: 2px solid blue">
+  <h1 style="text-align: center">Add single product</h1>
+  <form [formGroup]="addProductForm" (ngSubmit)="onSubmit()">
+    <div class="container">
+      <input matInput placeholder="title" formControlName="title" />
+
+      <!-- <mat-hint *ngIf="addProductForm.get('name').errors"
+      >Full name is required</mat-hint
+    > -->
+
+      <input matInput placeholder="description" formControlName="description" />
+      <!-- <mat-hint *ngIf="addProductForm.get('username').errors"
+      >Username is required</mat-hint
+    > -->
+
+      <input matInput placeholder="price" formControlName="price" />
+      <button
+        mat-flat-button
+        color="primary"
+        [disabled]="!addProductForm.valid"
+        type="submit"
+      >
+        Submit
+      </button>
+    </div>
+  </form>
+</div>
