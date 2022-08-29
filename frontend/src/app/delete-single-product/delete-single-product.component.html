@@ -1,0 +1,17 @@
+<div style="border: 2px solid blue">
+  <h1>Delete single product</h1>
+  <form [formGroup]="deleteProductForm" (ngSubmit)="onSubmit()">
+    <div class="container">
+      <input matInput placeholder="id" formControlName="id" />
+
+      <button
+        mat-flat-button
+        color="primary"
+        [disabled]="!deleteProductForm.valid"
+        type="submit"
+      >
+        Submit
+      </button>
+    </div>
+  </form>
+</div>

@@ -11,7 +11,7 @@ import { environment } from "environments/environment";
 export class ProductsService {
   constructor(private http: HttpClient) {}
 
-  get(): Observable<Product[]> {
+  getAllProducts(): Observable<Product[]> {
     return this.http.get<Product[]>(environment.backendUrl + "/products");
   }
 
@@ -55,5 +55,11 @@ export class ProductsService {
       .subscribe((data) => {
         console.log(data);
       });
+  }
+
+  deleteSingleProduct(value) {
+    this.http
+      .delete(environment.backendUrl + "/products/" + value.id)
+      .subscribe(() => console.log("Delete successful"));
   }
 }

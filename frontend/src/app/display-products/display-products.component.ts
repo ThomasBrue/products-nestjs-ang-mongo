@@ -15,7 +15,7 @@ export class DisplayProductsComponent implements OnInit {
 
   ngOnInit() {
     this.productsService
-      .get()
+      .getAllProducts()
       .pipe(take(1))
       .subscribe((products) => (this.products = products));
   }

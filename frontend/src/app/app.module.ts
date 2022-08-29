@@ -9,6 +9,7 @@ import { AddSingleProductComponent } from "./add-single-product/add-single-produ
 import { FormsModule, ReactiveFormsModule } from "@angular/forms";
 import { GetSingleProductComponent } from './get-single-product/get-single-product.component';
 import { EditSingleProductComponent } from './edit-single-product/edit-single-product.component';
+import { DeleteSingleProductComponent } from './delete-single-product/delete-single-product.component';
 
 @NgModule({
   declarations: [
@@ -17,6 +18,7 @@ import { EditSingleProductComponent } from './edit-single-product/edit-single-pr
     AddSingleProductComponent,
     GetSingleProductComponent,
     EditSingleProductComponent,
+    DeleteSingleProductComponent,
   ],
   imports: [
     BrowserModule,
