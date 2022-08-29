@@ -8,6 +8,7 @@ import { HttpClientModule } from "@angular/common/http";
 import { AddSingleProductComponent } from "./add-single-product/add-single-product.component";
 import { FormsModule, ReactiveFormsModule } from "@angular/forms";
 import { GetSingleProductComponent } from './get-single-product/get-single-product.component';
+import { EditSingleProductComponent } from './edit-single-product/edit-single-product.component';
 
 @NgModule({
   declarations: [
@@ -15,6 +16,7 @@ import { GetSingleProductComponent } from './get-single-product/get-single-produ
     DisplayProductsComponent,
     AddSingleProductComponent,
     GetSingleProductComponent,
+    EditSingleProductComponent,
   ],
   imports: [
     BrowserModule,

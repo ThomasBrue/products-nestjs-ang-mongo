@@ -37,4 +37,23 @@ export class ProductsService {
         console.log(data);
       });
   }
+
+  editSingleProduct(value) {
+    let payload = {};
+    if (value.title) {
+      payload["title"] = value.title;
+    }
+    if (value.description) {
+      payload["description"] = value.description;
+    }
+    if (value.price) {
+      payload["price"] = value.price;
+    }
+
+    this.http
+      .patch<any>(environment.backendUrl + "/products/" + value.id, payload)
+      .subscribe((data) => {
+        console.log(data);
+      });
+  }
 }

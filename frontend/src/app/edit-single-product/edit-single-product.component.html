@@ -1,0 +1,22 @@
+<div style="border: 2px solid blue">
+  <h1>Edit single product</h1>
+  <form [formGroup]="editProductForm" (ngSubmit)="onSubmit()">
+    <div class="container">
+      <input matInput placeholder="id" formControlName="id" />
+
+      <input matInput placeholder="title" formControlName="title" />
+
+      <input matInput placeholder="description" formControlName="description" />
+
+      <input matInput placeholder="price" formControlName="price" />
+      <button
+        mat-flat-button
+        color="primary"
+        [disabled]="!editProductForm.valid"
+        type="submit"
+      >
+        Submit
+      </button>
+    </div>
+  </form>
+</div>
