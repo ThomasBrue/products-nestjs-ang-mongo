@@ -8,6 +8,7 @@
   "scripts": {
     "prebuild": "rimraf dist",
     "build": "nest build",
+    "build:all": "rimraf ./dist && nest build && cd ../frontend &&  ng build --prod && ls && mv ./dist/frontend ./../backend/dist/frontend",
     "format": "prettier --write \"src/**/*.ts\" \"test/**/*.ts\"",
     "start": "nest start",
     "start:dev": "nest start --watch",
@@ -25,6 +26,7 @@
     "@nestjs/core": "^9.0.7",
     "@nestjs/mongoose": "^9.2.0",
     "@nestjs/platform-express": "^9.0.0",
+    "@nestjs/serve-static": "^2.1.1",
     "mongoose": "^6.2.2",
     "reflect-metadata": "^0.1.13",
     "rimraf": "^3.0.2",
