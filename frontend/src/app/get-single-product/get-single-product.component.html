@@ -1,0 +1,18 @@
+<div style="border: 2px solid blue">
+  <h1>Get single product</h1>
+  <form [formGroup]="getProductForm" (ngSubmit)="onSubmit()">
+    <div class="container">
+      <input matInput placeholder="id" formControlName="id" />
+
+      <button
+        mat-flat-button
+        color="primary"
+        [disabled]="!getProductForm.valid"
+        type="submit"
+      >
+        Submit
+      </button>
+    </div>
+  </form>
+  <div *ngIf="product" style="border: 1px solid grey;"> Title: {{ product.title }} / Description: {{ product.description }} / Price: {{ product.price }} / ID: {{ product.id }}</div>
+</div>

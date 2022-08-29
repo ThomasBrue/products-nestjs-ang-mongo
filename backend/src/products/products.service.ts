@@ -82,6 +82,6 @@ export class ProductsService {
   }
 
   async deleteProduct(prodId: string) {
-   await this.productModel.deleteOne({id: prodId});
+    await this.productModel.deleteOne({ id: prodId });
   }
 }

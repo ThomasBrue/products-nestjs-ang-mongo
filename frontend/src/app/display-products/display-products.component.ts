@@ -19,8 +19,4 @@ export class DisplayProductsComponent implements OnInit {
       .pipe(take(1))
       .subscribe((products) => (this.products = products));
   }
-
-  ngDoCheck() {
-    console.log(this.products);
-  }
 }

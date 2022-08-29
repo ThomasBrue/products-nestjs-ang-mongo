@@ -7,12 +7,14 @@ import { DisplayProductsComponent } from "./display-products/display-products.co
 import { HttpClientModule } from "@angular/common/http";
 import { AddSingleProductComponent } from "./add-single-product/add-single-product.component";
 import { FormsModule, ReactiveFormsModule } from "@angular/forms";
+import { GetSingleProductComponent } from './get-single-product/get-single-product.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     DisplayProductsComponent,
     AddSingleProductComponent,
+    GetSingleProductComponent,
   ],
   imports: [
     BrowserModule,

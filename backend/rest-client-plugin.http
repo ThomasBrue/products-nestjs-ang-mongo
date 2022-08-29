@@ -5,7 +5,7 @@ POST http://localhost:3000/products HTTP/1.1
 content-type: application/json
 
 {
-    "title": "Some Title 111",
+    "title": "Some Title 222",
     "description": "This is a first Product",
     "price": 29.99
 }
@@ -16,7 +16,7 @@ GET http://localhost:3000/products HTTP/1.1
 
 ### Get single product
 
-GET http://localhost:3000/products/62f3baff67f06ba49ecb18d5 HTTP/1.1
+GET http://localhost:3000/products/62f3d827f388be02b6b5d877 HTTP/1.1
 
 ### Update single product
 

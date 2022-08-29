@@ -15,6 +15,15 @@ export class ProductsService {
     return this.http.get<Product[]>(environment.backendUrl + "/products");
   }
 
+  getSingleProduct(value): Observable<any> {
+    console.log(environment.backendUrl + "/products/" + value.id);
+
+    let resp = this.http.get(environment.backendUrl + "/products/" + value.id);
+    console.log("resp:", resp);
+
+    return resp;
+  }
+
   createSingleProduct(value) {
     let payload = {
       title: value.title ? value.title : "",
