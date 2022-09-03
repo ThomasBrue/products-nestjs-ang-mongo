@@ -1,1 +1,1 @@
-web: cd backend && npm run deploy
+web: cd backend && npm run deployToAws

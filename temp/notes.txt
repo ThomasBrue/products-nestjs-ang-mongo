@@ -1,0 +1,5 @@
+When deploying the following files have to be put into the dist folder:
+
+1. package.json  (to install all dependencies like nestJs // it has to be the package.json from the backend)
+((  2. .npmrc  (content: {  unsafe-perm=true  }    might not be neccessary.)  ))
+3. Procfile   ( content: { web: node main }     is needed to start the application on aws )
