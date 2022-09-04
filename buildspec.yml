@@ -26,9 +26,10 @@ phases:
   pre_build:
     commands:
       - echo Installing source NPM dependencies...
-      - cd backend
       - npm install -g @angular/cli
       - npm install -g @nestjs/cli
+      - cd backend
+      - npm install
   build:
     commands:
       - echo Build started on `date`
