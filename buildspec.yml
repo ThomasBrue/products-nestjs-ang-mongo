@@ -57,6 +57,9 @@ phases:
       - echo "Build finished "
       - ls
       - echo " ------------------------------------------------------------------------------------ "
+      - cd dist
+      - ls
+      - echo " ------------------------------------------------------------------------------------ "
 
 # Include only the files required for your application to run.
 artifacts:
