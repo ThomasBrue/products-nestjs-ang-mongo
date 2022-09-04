@@ -32,7 +32,6 @@ phases:
       - npm install -g @angular/cli@latest
       # - npm install -g @angular/cli@8.3.29
 
-      
       - ng version
       - npm install -g @nestjs/cli
       - cd backend
@@ -40,9 +39,9 @@ phases:
   build:
     commands:
       - echo Build started on `date`
-      - nest build 
-      - cd ../frontend 
-      - npm install 
+      - nest build
+      - cd ../frontend
+      - npm install
       - ls
       - echo "--------- build angular app --------------------"
       - ng build
@@ -61,9 +60,6 @@ artifacts:
     - Procfile
     - dist/*
     - package.json
-
-
-
 # -----------------------------------------------------------------------------------------------------
 
 # # Do not change version. This is the version of aws buildspec, not the version of your buldspec file.
