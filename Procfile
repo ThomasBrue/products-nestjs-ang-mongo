@@ -1,1 +1,1 @@
-web: ls && echo "hello friend" && cd dist && node main.js
+web: cd distXXX && node main
