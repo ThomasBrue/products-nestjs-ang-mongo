@@ -50,6 +50,8 @@ phases:
   post_build:
     commands:
       - echo Build completed on `date`
+      - cd ../backend
+      - cp ./package.json ./dist/
 
 # Include only the files required for your application to run.
 artifacts:
