@@ -53,7 +53,8 @@ phases:
       - echo Build completed on `date`
       - cd ../backend
       - cp ./package.json ./../
-      - cd .. $$ echo "Build finished: "
+      - cd ..
+      - echo "Build finished "
       - ls
       - echo " ------------------------------------------------------------------------------------ "
 
