@@ -53,6 +53,9 @@ phases:
       - echo Build completed on `date`
       - cd ../backend
       - cp ./package.json ./../
+      - cd .. $$ echo "Build finished: "
+      - ls
+      - echo " ------------------------------------------------------------------------------------ "
 
 # Include only the files required for your application to run.
 artifacts:
