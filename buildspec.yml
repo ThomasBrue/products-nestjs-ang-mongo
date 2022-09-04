@@ -51,13 +51,14 @@ phases:
     commands:
       - echo Build completed on `date`
       - cd ../backend
-      - cp ./package.json ./dist/
+      - cp ./package.json ./../
 
 # Include only the files required for your application to run.
 artifacts:
   files:
     - Procfile
     - dist/**/*
+    - package.json
 
 
 
