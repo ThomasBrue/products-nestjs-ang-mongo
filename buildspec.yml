@@ -25,6 +25,9 @@ phases:
       - echo Installing source NPM dependencies...
       # - npm i @angular/cli@13.3.9
       - npm install -g @angular/cli@latest
+      # - npm install -g @angular/cli@8.3.29
+
+      
       - ng version
       - npm install -g @nestjs/cli
       - cd backend
