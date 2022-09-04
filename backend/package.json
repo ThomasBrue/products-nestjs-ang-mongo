@@ -26,10 +26,10 @@
     "deployToAws": "echo '------------ BUILD_STAGE --------------------' && npm ci && npm run build:allAws && ls && echo '------------ COPY_STAGE --------------------' &&  cp ./../temp/.npmrc  ./../backend/dist  && cp ./package.json ./../backend/dist && ls  && echo '------------ START_STAGE --------------------' && npm run start:prod"
   },
   "dependencies": {
-    "@nestjs/common": "^9.0.7",
-    "@nestjs/core": "^9.0.7",
-    "@nestjs/mongoose": "^9.2.0",
-    "@nestjs/platform-express": "^9.0.0",
+    "@nestjs/common": "9.0.7",
+    "@nestjs/core": "9.0.7",
+    "@nestjs/mongoose": "9.2.0",
+    "@nestjs/platform-express": "9.0.0",
     "@nestjs/serve-static": "^2.1.1",
     "mongoose": "^6.2.2",
     "reflect-metadata": "^0.1.13",
