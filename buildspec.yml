@@ -47,6 +47,8 @@ phases:
       - echo "--------- build angular app --------------------"
       - ng build
       - mv ./dist/frontend ./../backend/dist/frontend
+      # - cd ..
+      # - mv ./dist/* .
   post_build:
     commands:
       - echo Build completed on `date`
@@ -57,7 +59,7 @@ phases:
 artifacts:
   files:
     - Procfile
-    - dist/**/*
+    - dist/*
     - package.json
 
 
