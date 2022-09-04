@@ -20,9 +20,6 @@ version: 0.2
 
 # Build the code
 phases:
-  # install:
-  #   runtime-versions:
-  #     nodejs: 10  
   pre_build:
     commands:
       - echo Installing source NPM dependencies...
@@ -36,6 +33,8 @@ phases:
       - nest build 
       - cd ../frontend 
       - npm install 
+      - ls
+      - echo "--------- build angular app --------------------"
       - ng build
       - mv ./dist/frontend ./../backend/dist/frontend
   post_build:
