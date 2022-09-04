@@ -1,33 +1,16 @@
-import { BrowserModule } from "@angular/platform-browser";
-import { NgModule } from "@angular/core";
+import { NgModule } from '@angular/core';
+import { BrowserModule } from '@angular/platform-browser';
 
-import { AppRoutingModule } from "./app-routing.module";
-import { AppComponent } from "./app.component";
-import { DisplayProductsComponent } from "./display-products/display-products.component";
-import { HttpClientModule } from "@angular/common/http";
-import { AddSingleProductComponent } from "./add-single-product/add-single-product.component";
-import { FormsModule, ReactiveFormsModule } from "@angular/forms";
-import { GetSingleProductComponent } from './get-single-product/get-single-product.component';
-import { EditSingleProductComponent } from './edit-single-product/edit-single-product.component';
-import { DeleteSingleProductComponent } from './delete-single-product/delete-single-product.component';
+import { AppComponent } from './app.component';
 
 @NgModule({
   declarations: [
-    AppComponent,
-    DisplayProductsComponent,
-    AddSingleProductComponent,
-    GetSingleProductComponent,
-    EditSingleProductComponent,
-    DeleteSingleProductComponent,
+    AppComponent
   ],
   imports: [
-    BrowserModule,
-    AppRoutingModule,
-    HttpClientModule,
-    FormsModule,
-    ReactiveFormsModule,
+    BrowserModule
   ],
   providers: [],
-  bootstrap: [AppComponent],
+  bootstrap: [AppComponent]
 })
-export class AppModule {}
+export class AppModule { }

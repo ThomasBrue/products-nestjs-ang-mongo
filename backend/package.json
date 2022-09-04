@@ -9,7 +9,7 @@
     "prebuild": "rimraf dist",
     "build": "nest build",
     "build:temp": "rimraf ./dist && nest build && cd ../frontend && npm ci && npm install -g @angular/cli@latest && ng build --prod && ls && mv ./dist/frontend ./../backend/dist/frontend",
-    "build:all": "rimraf ./dist && nest build && cd ../frontend && npm ci && npm install -g @angular/cli@latest && ng build --configuration production && ls && mv ./dist/frontend ./../backend/dist/frontend",
+    "build:all": "rimraf ./dist && nest build && cd ../frontend && npm install && npm install -g @angular/cli@latest && ng build --configuration production && ls && mv ./dist/frontend ./../backend/dist/frontend",
     "build:allAws": "nest build && cd ../frontend && npm ci && npm install -g @angular/cli@latest && ng build --configuration production && ls && mv ./dist/frontend ./../backend/dist/frontend",
     "format": "prettier --write \"src/**/*.ts\" \"test/**/*.ts\"",
     "start": "nest start",
@@ -22,7 +22,7 @@
     "test:cov": "jest --coverage",
     "test:debug": "node --inspect-brk -r tsconfig-paths/register -r ts-node/register node_modules/.bin/jest --runInBand",
     "test:e2e": "jest --config ./test/jest-e2e.json",
-    "deploy": "npm ci && npm run build:all && npm run start:prod",
+    "deploy": "npm install && npm run build:all && npm run start:prod",
     "deployToAws": "echo '------------ BUILD_STAGE --------------------' && npm ci && npm run build:allAws && ls && echo '------------ COPY_STAGE --------------------' &&  cp ./../temp/.npmrc  ./../backend/dist  && cp ./package.json ./../backend/dist && ls  && echo '------------ START_STAGE --------------------' && npm run start:prod"
   },
   "dependencies": {
