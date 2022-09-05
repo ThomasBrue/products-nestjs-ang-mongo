@@ -1,1 +1,1 @@
-web: cd backend/dist && node main
+web: node main
