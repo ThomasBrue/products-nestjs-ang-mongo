@@ -11,7 +11,7 @@
     "build:temp": "rimraf ./dist && nest build && cd ../frontend && npm ci && npm install -g @angular/cli@latest && ng build --prod && ls && mv ./dist/frontend ./../backend/dist/frontend",
     "build:all": "rimraf ./dist && nest build && cd ../frontend && npm install && npm install -g @angular/cli@latest && ng build --configuration production && ls && mv ./dist/frontend ./../backend/dist/frontend",
     "build:allAws": "nest build && cd ../frontend && npm ci && npm install -g @angular/cli@latest && ng build --configuration production && ls && mv ./dist/frontend ./../backend/dist/frontend",
-    "build:test": "cd backend && nest build && cd ../frontend && npm install && ng build && mv ./dist/frontend ./../backend/dist/frontend && cd ../backend && cp ./package.json ./../ &&  cd .. && rm -rf frontend && cd backend && cd dist && mv ./../dist/* ./../../ && cd ./../../ && rm -rf backend",
+    "build:test": "cd backend && nest build && cd ../frontend && npm install && ng build && mv ./dist/frontend ./../backend/dist/frontend && cd ../backend && cp ./package.json ./../ &&  cd .. && rm -rf frontend && cd backend && cd dist && mv ./../dist/* ./../../ && cd ./../../",
     "format": "prettier --write \"src/**/*.ts\" \"test/**/*.ts\"",
     "start": "nest start",
     "start:dev": "nest start --watch",
