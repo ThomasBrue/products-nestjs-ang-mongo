@@ -75,9 +75,10 @@ phases:
 # Include only the files required for your application to run.
 artifacts:
   files:
-    - Procfile
-    - backend/dist/*
-    - package.json
+    # - Procfile
+    # - backend/dist/*
+    # - package.json
+    - ./*
 # -----------------------------------------------------------------------------------------------------
 
 # # Do not change version. This is the version of aws buildspec, not the version of your buldspec file.
