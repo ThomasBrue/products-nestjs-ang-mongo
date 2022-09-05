@@ -23,14 +23,14 @@
     "test:debug": "node --inspect-brk -r tsconfig-paths/register -r ts-node/register node_modules/.bin/jest --runInBand",
     "test:e2e": "jest --config ./test/jest-e2e.json",
     "deploy": "npm install && npm run build:all && npm run start:prod",
-    "deployToAws": "echo '------------ BUILD_STAGE --------------------' && npm ci && npm run build:allAws && ls && echo '------------ COPY_STAGE --------------------' &&  cp ./../temp/.npmrc  ./../backend/dist  && cp ./package.json ./../backend/dist && ls  && echo '------------ START_STAGE --------------------' && npm run start:prod"
+    "deployToAws": " npm ci && npm run build:allAws && ls &&  cp ./../temp/.npmrc  ./../backend/dist  && cp ./package.json ./../backend/dist && ls  &&  npm run start:prod"
   },
   "dependencies": {
     "@nestjs/common": "9.0.7",
     "@nestjs/core": "9.0.7",
     "@nestjs/mongoose": "9.2.0",
     "@nestjs/platform-express": "9.0.0",
-    "@nestjs/serve-static": "^2.1.1",
+    "@nestjs/serve-static": "3.0.0",
     "mongoose": "^6.2.2",
     "reflect-metadata": "^0.1.13",
     "rimraf": "^3.0.2",
