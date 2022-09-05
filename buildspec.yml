@@ -73,6 +73,7 @@ phases:
       - rm -rf backend
       - ls
       - echo " ------------------------------------------------------------------------------------ "
+      - npm install
 
 # Include only the files required for your application to run.
 artifacts:
