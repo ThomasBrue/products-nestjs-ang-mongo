@@ -38,6 +38,8 @@ phases:
       - npm install
   build:
     commands:
+      - echo " ------------- Build start -------------------------------"
+      - cd backed && ls
       - echo Build started on `date`
       - nest build
       - cd ../frontend
